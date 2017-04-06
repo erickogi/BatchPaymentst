@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:text="Set department"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:hint="Amount"
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnSend"
+        android:text="SEND"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+<!--    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/android_material_design_spinner_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Choose Department"
+        android:textColorHint="@color/colorPrimary"
+        app:met_floatingLabel="normal" >
+        </com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner>-->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RadioButton
+        android:layout_weight="1"
+        android:id="@+id/radioSelectAll"
+        android:text="All"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <RadioButton
+        android:layout_weight="1"
+        android:id="@+id/radioSelect"
+        android:text="Choose"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/batch_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>
